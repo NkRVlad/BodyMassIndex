@@ -54,7 +54,7 @@ There are 4 fields on the form.
 
 An example of filling in data and getting the result
 
-![alt text](https://github.com/NkRVlad/BodyMassIndex/raw/main/help_image/Example.png?)
+![alt text](https://github.com/NkRVlad/BodyMassIndex/raw/main/help_image/Example_img.png?)
 
 
 # Developer
