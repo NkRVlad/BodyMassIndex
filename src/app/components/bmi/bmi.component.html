@@ -1,0 +1,63 @@
+<section class = "section-1 py-6">
+  <div class = "container">
+    <div class = "row no-gutters">
+      <div class = "col-lg-8 col-xl-6 offset-lg-2 offset-xl-3">
+        <div class = "header_main">
+          <p align = "center" class= "h1">Калькулятор ИМТ</p>
+        </div>
+        <div class = "required">
+          <div class = "alert alert-danger" *ngIf = "myForm.controls['Age'].invalid && myForm.controls['Age'].touched" >
+            Возраст должен быть числом от 18 до 100!
+          </div>
+          <div class = "alert alert-danger" *ngIf = "myForm.controls['Height'].invalid && myForm.controls['Height'].touched">
+            Рост должен быть числом от 100 до 270!
+          </div>
+          <div class = "alert alert-danger" *ngIf = "myForm.controls['Weight'].invalid && myForm.controls['Weight'].touched">
+            Вес должен быть числом от 10 до 600!
+          </div>
+        </div>
+        <form  [formGroup] = "myForm" (submit) = "processingBmiRequest(inputAge.value, inputGender.value, inputHeight.value, inputWeight.value)">
+          <div class = "row form-group pt-5">
+            <div class = "col-6">
+              <label for = "inputAge">Возраст (полных лет)</label>
+              <input type = "text" class = "form-control" formControlName = "Age" #inputAge  placeholder = "28" required>
+            </div>
+            <div class = "col-6">
+              <div class = "input-group mb-3">
+                <div class = "input-group-prepend">
+                  <label for = "inputGender">Пол</label>
+                 </div>
+                <select class = "custom-select w-100"  #inputGender  required>
+                  <option value = "men">Мужской</option>
+                  <option value = "women">Женский</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class = "row form-group pb-1">
+            <div class = "col-6">
+              <label for = "inputHeight">Рост&nbsp;(см)</label>
+              <input type = "text" class = "form-control" formControlName = "Height" #inputHeight  placeholder = "165" required>
+            </div>
+            <div class = "col-6">
+              <label for = "inputWeight">Вес&nbsp;(кг)</label>
+              <input type = "text" class = "form-control" formControlName = "Weight" #inputWeight placeholder = "110" required>
+            </div>
+          </div>
+          <div class = "text-center mt-4" >
+            <button  [disabled] = "myForm.invalid" class = "btn btn-primary btn-lg" type = "submit">Рассчитать</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div align = "center">
+  <div  id = "rectangle">
+    {{ index_result }}
+  </div>
+</div>
+<div>
+  <p class = "result">{{ resultHealthStatus }}<p>
+</div>
