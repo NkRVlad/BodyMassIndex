@@ -35,7 +35,7 @@ The application is designed to help people take care of their health. You can co
 To install the application, you need to download the archive from the link https://github.com/NkRVlad/BodyMassIndex.git. The downloaded archive must be unzipped into an empty folder.
 Additional plugins must be installed on your device to run the application:
   - Node.js version 14.15.0 or later;
-  - Angular CLI version 11.0.2 or later;
+  - Angular CLI version 11.0.2 or later.
 
 You can find detailed instructions on installing and configuring applications at the link https://angular.io/guide/setup-local
 
@@ -43,4 +43,19 @@ You can find detailed instructions on installing and configuring applications at
 
 To start the application, you need to open the console editor by pressing Win + R and enter the command "cmd", after using the cd and the full path to the folder, you need to go to its directory and enter the ng serve command, after a successful launch, go to the browser and enter the address in the search bar http://localhost:4200.
 In the window that opens, we see the main form
+
 ![alt text](https://github.com/NkRVlad/BodyMassIndex/raw/main/help_image/Main_Form.png?)
+
+There are 4 fields on the form.
+ - in the Age field, you must indicate your age, which must be over 18 and under 100 years old;
+- in the Gender field, select your gender;
+- in the Height (meters) field, you need to indicate your height, which should be more than 100 and less than 270 meters;
+- in the Weight field you need to specify your weight, which must be more than 10 and less than 600 kilograms.
+
+An example of filling in data and getting the result
+
+![alt text](https://github.com/NkRVlad/BodyMassIndex/raw/main/help_image/Example.png?)
+
+
+# Developer
+Zalepa Vladislav
