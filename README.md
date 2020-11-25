@@ -43,4 +43,4 @@ You can find detailed instructions on installing and configuring applications at
 
 To start the application, you need to open the console editor by pressing Win + R and enter the command "cmd", after using the cd and the full path to the folder, you need to go to its directory and enter the ng serve command, after a successful launch, go to the browser and enter the address in the search bar http://localhost:4200.
 In the window that opens, we see the main form
-![alt text](https://github.com/NkRVlad/BodyMassIndex/help_image/Main_Form.png?raw=true)
+![alt text](https://github.com/NkRVlad/BodyMassIndex/raw/main/help_image/Main_Form.png?)
